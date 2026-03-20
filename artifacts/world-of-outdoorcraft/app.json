@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "World of Outdoorcraft",
+    "slug": "world-of-outdoorcraft",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "world-of-outdoorcraft",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F1F12"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "World of Outdoorcraft uses your camera to photograph wildlife, plants, and locations for quests.",
+        "NSPhotoLibraryUsageDescription": "World of Outdoorcraft needs access to your photos to submit quest photo evidence.",
+        "NSLocationWhenInUseUsageDescription": "World of Outdoorcraft uses your location to verify GPS-based quests at Yellowstone."
+      }
+    },
+    "android": {
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
